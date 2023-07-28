@@ -1,12 +1,17 @@
 import { StyleSheet, Text, View } from "react-native";
+import { Link, Redirect } from "expo-router";
 
 export default function Page() {
   return (
-    <View style={styles.container}>
-      <View style={styles.main}>
-        <Text style={styles.title}>Hello Start</Text>
-      </View>
-    </View>
+    <Redirect href="/chat" />
+    // <View style={styles.container}>
+    //   <View style={styles.main}>
+    //     <Text style={styles.title}>Hello Start</Text>
+    //     <Link href="/chat">
+    //       <Text style={styles.subtitle}>Chat</Text>
+    //     </Link>
+    //   </View>
+    // </View>
   );
 }
 
